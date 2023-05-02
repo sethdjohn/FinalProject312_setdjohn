@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Presidents Quiz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="final.css">
+
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script src="/Quiz/question_buttons.js"></script>
+
+</head>
+
+<body>
+
+  	
+  <div>
+    <a class="hamburger" href="#navbar">
+      <i class="fa-solid fa-bars"></i>
+    </a>
+    <nav id="navbar">
+    <ul>
+      <i class="fa-solid fa-house"></i>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="quiz.html">
+      Quiz
+      </a></li>
+    </ul>
+    <div>
+    </div>
+    </nav>
+    </div>
+
+	
+
+    <!--Modals will be used as pop ups for whether the user gets an answer correct or incorrect-->
+
+  <body>
+
+    <!--Question 1 Container-->
+    <div class="container">
+        <h1>Presidents of the United States Quiz</h1>
+        <div id="quiz">
+          <h3 id="question">Question 1: Who was the first president of the United States?</h3>
+          <div id="choices">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">A. George Washington</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">B. John Adams</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3">C. Thomas Jefferson</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal4">D. Abraham Lincoln</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal 1 -->
+      <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal1Label">Correct!!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+          
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal 2 -->
+      <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal2Label">Incorrect!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal 3 -->
+      <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal3Label">Incorrect!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal 4 -->
+      <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modal4Label">Incorrect!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+              
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    
+    
+    <!--Question2 Container-->
+     <div class="container 2">
+
+      <div id="quiz">
+        <h3 id="question">Question 2: Who was the president during the Civil War?</h3>
+        <div id="choices">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">A. Abraham Lincoln</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">B. Ulysses S. Grant</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3">C. Andrew Johnson</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal4">D. James Buchanan</button>
+        </div>
+      </div>
+    </div>
+
+          <!-- Modal 1 -->
+          <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal1Label">Correct!!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                 Correct
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Modal 2 -->
+          <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal2Label">Incorrect!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+              
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Modal 3 -->
+          <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal3Label">Incorrect!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Modal 4 -->
+          <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modal4Label">Incorrect!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                   
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+     <!--Question 3 Container-->
+     <div class="container 3">
+
+      <div id="quiz">
+        <h3 id="question">Question 3: Who was the only president to serve two non-consecutive terms?</h3>
+        <div id="choices">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">A. Franklin D. Roosevelt</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">B. Grover Cleveland</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3">C. Woodrow Wilson</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal4">D. Harry S. Truman</button>
+        </div>
+      </div>
+    </div>
+
+              <!-- Modal 1 -->
+              <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modal1Label">Incorrect</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Modal 2 -->
+              <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modal2Label">Correct !!</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Modal 3 -->
+              <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modal3Label">Incorrect!</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Modal 4 -->
+              <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4Label" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="modal4Label">Incorrect!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                    !
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+     <!--Question 4 Container-->
+     <div class="container 4">
+
+      <div id="quiz">
+        <h3 id="question">Question 4: Who was the youngest president to be elected to office?</h3>
+        <div id="choices">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">A. John F. Kennedy</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">B. Theodore Roosevelt</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3">C. James K. Polk</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal4">D. Barack Obama</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal1Label">Correct!!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal 2 -->
+    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal2Label">Incorrect!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal 3 -->
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal3Label">Incorrect!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal 4 -->
+    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal4Label">Incorrect!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!--Question 5 Container-->
+  <div class="container 5">
+
+    <div id="quiz">
+      <h3 id="question">Question 5:Who was the first president to be impeached?</h3>
+      <div id="choices">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3">A. Richard Nixon</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">B. Bill Clinton</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">C. Andrew Johnson</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal4">D. Donald Trump</button>
+      </div>
+    </div>
+  </div>
+      <!-- Modal 1 -->
+      <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal1Label">Correct!!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal 2 -->
+      <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal2Label">Incorrect!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+           
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal 3 -->
+      <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal3Label">Incorrect!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal 4 -->
+      <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modal4Label">Incorrect!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+               
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <!--Question 6 Container-->
+    <div class="container 6">
+
+      <div id="quiz">
+        <h3 id="question">Question 6: Who was the president during World War I?</h3>
+        <div id="choices">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">A. Woodrow Wilson</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">B. Warren G. Harding</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3">C. Calvin Coolidge</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal4">D. Herbert Hoover</button>
+        </div>
+      </div>
+    </div>
+
+     <!-- Modal 1 -->
+     <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal1Label">Correct!!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+        
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal 2 -->
+    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal2Label">Incorrect!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+      
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal 3 -->
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal3Label">Incorrect!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal 4 -->
+    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal4Label">Incorrect!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!--Question 7 Container-->
+  <div class="container 7">
+
+    <div id="quiz">
+      <h3 id="question">Question 7: Who was the only president to resign from office?</h3>
+      <div id="choices">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal4">A. Lyndon B. Johnson </button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">B. Gerald Ford</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3">C. Jimmy Carter</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">D. Richard Nixon</button>
+      </div>
+    </div>
+  </div>
+
+       <!-- Modal 1 -->
+       <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal1Label">Correct!!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+          
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal 2 -->
+      <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal2Label">Incorrect!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+          
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal 3 -->
+      <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal3Label">Incorrect!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal 4 -->
+      <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modal4Label">Incorrect!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+<!--Question 8 Container-->
+<div class="container 8">
+
+  <div id="quiz">
+    <h3 id="question">Question 8: Who was the president during the Cuban Missile Crisis?</h3>
+    <div id="choices">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">A. Dwight D. Eisenhower</button>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">B. John F. Kennedy</button>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3">C. Lyndon B. Johnson</button>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal4">D. Richard Nixon</button>
+    </div>
+  </div>
+</div>
+
+       <!-- Modal 1 -->
+       <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal1Label">Correct!!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal 2 -->
+      <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal2Label">Incorrect!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal 3 -->
+      <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal3Label">Incorrect!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal 4 -->
+      <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modal4Label">Incorrect!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+             
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  
+    <!--Question 9 Container-->
+<div class="container 9">
+
+  <div id="quiz">
+    <h3 id="question">Question 9: Who was the president during the Great Depression?</h3>
+    <div id="choices">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">A. Franklin D. Roosevelt</button>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">B. Herbert Hoover</button>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3">C. Harry S. Truman</button>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal4">D. Calvin Coolidge</button>
+    </div>
+  </div>
+</div>
+
+       <!-- Modal 1 -->
+       <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal1Label">Correct!!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal 2 -->
+      <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal2Label">Incorrect!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal 3 -->
+      <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal3Label">Incorrect!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal 4 -->
+      <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modal4Label">Incorrect!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+              
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+        <!--Question 10 Container-->
+<div class="container 10">
+
+  <div id="quiz">
+    <h3 id="question">Question 10:Who was the first president to be assassinated?</h3>
+    <div id="choices">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3">A. John F. Kennedy</button>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">B. James A. Garfield</button>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">C. Abraham Lincoln</button>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal4">D. William McKinley</button>
+    </div>
+  </div>
+</div>
+
+       <!-- Modal 1 -->
+       <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal1Label">Correct!!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal 2 -->
+      <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal2Label">Incorrect!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal 3 -->
+      <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal3Label">Incorrect!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+           
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal 4 -->
+      <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modal4Label">Incorrect!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+             
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    
+</body>
+</html>
